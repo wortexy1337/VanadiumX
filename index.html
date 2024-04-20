@@ -1,0 +1,547 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Minecraft &amp; Bot Hosting for Free ~ Pylex" property="og:title">
+    <meta content="Get your server up &amp; running for free, 24/7 with Pylex! ~ try us now!" property="og:description">
+    <meta content="https://pylexnodes.net" property="og:url">
+    <meta content="https://cdn.pylex.me/pylexgif.gif" property="og:image">
+    <meta content="#151c82" data-react-helmet="true" name="theme-color">
+    <title>Free Hosting Service - PylexNodes</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="f687b4012397aced65379752-text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async=""></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-J8CLGK45F0" type="f687b4012397aced65379752-text/javascript"></script>
+    <link rel="stylesheet" href="/css/bg.css">
+    <script type="f687b4012397aced65379752-text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-J8CLGK45F0');
+    </script>
+    <script data-cfasync="false">window.nitroAds = window.nitroAds || { createAd: function () { return new Promise(e => { window.nitroAds.queue.push(["createAd", arguments, e]) }) }, addUserToken: function () { window.nitroAds.queue.push(["addUserToken", arguments]) }, queue: [] };</script>
+    <script data-cfasync="false" async="" src="https://s.nitropay.com/ads-1794.js"></script>
+    <link rel="icon" href="/favicon.png">
+<style>
+    /* Modal için basit CSS */
+    .modal {
+        display: none; /* Default olarak görünmez */
+        position: fixed; /* Sabit pozisyon */
+        z-index: 1; /* Üstte gözüksün */
+        left: 0;
+        top: 0;
+        width: 100%; /* Tam ekran kaplasın */
+        height: 100%; /* Tam ekran kaplasın */
+        overflow: auto; /* İçerik fazlaysa kaydırma çubuğu eklensin */
+        background-color: rgba(0,0,0,0.4); /* Siyah arka plan ve opaklık */
+    }
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; /* Ortalansın */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Genişlik */
+        animation: zoomIn 0.3s; /* Açılırken zoom in animasyonu */
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    /* @keyframes ile animasyon tanımı */
+    @keyframes zoomIn {
+        from {
+            transform: scale(0.5); /* Küçültülmüş hali */
+        }
+        to {
+            transform: scale(1); /* Normal boyutta */
+        }
+    }
+
+    @keyframes zoomOut {
+        from {
+            transform: scale(1); /* Normal boyutta */
+        }
+        to {
+            transform: scale(0.5); /* Küçültülmüş hali */
+        }
+    }
+</style></head>
+
+<body>
+    
+    <div id="popupWrapper" class="popup-wrapper">
+        <a class="popupTitle">New to Pylex!?</a>
+        <img class="popupImg" src="/risebizdencaldi.png">
+        <a class="popupSubTitle">Here's a discount code! (10% off)</a>
+        <div id="discountTXT" onclick="if (!window.__cfRLUnblockHandlers) return false; copyDiscount();" class="discount-wrapper" data-cf-modified-f687b4012397aced65379752-="">meow <i class="fa-regular fa-copy"></i></div>
+        <div class="justify-start popupbtns-wrapper">
+            <button onclick="if (!window.__cfRLUnblockHandlers) return false; closePopup();" class="popupBtn" data-cf-modified-f687b4012397aced65379752-="">Close</button>
+            <div class="spaceBetween5px"></div>
+            <button onclick="if (!window.__cfRLUnblockHandlers) return false; window.location.href = '/premium/store'" class="popupBtn" data-cf-modified-f687b4012397aced65379752-="">Claim Offer</button>
+        </div>
+    </div>
+    <script type="f687b4012397aced65379752-text/javascript">
+        let popupWrapper = document.getElementById('popupWrapper')
+        setTimeout(() => {
+            popupWrapper.style.scale = '100%'
+            popupWrapper.style.opacity = '100%';
+            popupWrapper.style.visibility = 'visible';
+        }, 1000);
+
+        function openPopup() {
+            popupWrapper.style.scale = '100%'
+            popupWrapper.style.opacity = '100%';
+            popupWrapper.style.visibility = 'visible';
+        }
+
+        function closePopup() {
+            popupWrapper.style.scale = '75%';
+            popupWrapper.style.opacity = 0;
+            popupWrapper.style.visibility = 'hidden'
+        }
+
+        function copyDiscount() {
+            let discountTxt = document.getElementById('discountTXT')
+            navigator.clipboard.writeText('meow')
+            discountTxt.innerText = 'Copied!';
+            setTimeout(() => {
+                discountTxt.innerHTML = 'meow <i class="fa-regular fa-copy"></i>';
+            }, 1000);
+        }
+    </script>
+    <div class="main-thing">
+        <div style="z-index: 3;" class="navbar-div">
+            <div class="fancy-center">
+                <div onclick="if (!window.__cfRLUnblockHandlers) return false; window.location.href = '/'" class="logo-wrapper" data-cf-modified-f687b4012397aced65379752-="">
+                    <img class="pylex-logo" src="risebizdencaldi.png">
+                    <a class="pylex-logo-text">Vanadium<p class="smaller-logo">x.online</p></a>
+                </div>
+                <div class="navbar-btns-wrapper">
+                    
+                    
+                    <a href="#getstarted">
+                                </a><a href="#getstarted">
+                        <button class="whyus-btn">Satın al.
+                        </button>
+                    </a>
+                            
+                </div>
+            </div>
+        </div>
+        <div class="landing-img-wrapper">
+        </div>
+        <img class="landing-img-full" src="https://r4.wallpaperflare.com/wallpaper/206/247/672/minecraft-colorful-green-blue-purple-hd-wallpaper-a940688d113a8d7bd697d8af60d1867d.jpg">
+        <div style="z-index: 2;" class="alert-div">
+            <div class="fancy-center">
+                
+            </div>
+        </div>
+        <div style="margin-top: 165px; z-index: 2;" class="fancy-center">
+            <div class="main-stuff justify-center">
+                <div class="landing-img">
+                    <img class="landing-image" src="mc.png">
+
+
+                </div>
+                <div class="right-part">
+                    <div class="h-center">
+                        <h2 class="main-text">Vanadium Client - Kolay, Hızlı</h2>
+                        <a class="description-text">100'den Fazla Müşterimiz ile 2023'den beri oyununuza renk katıyoruz farklı farklı kişilerin deneyimi ile size en kaliteli oyun yazılım desteği sunuyoruz eğer sende bu destekten yararlanmak istiyorsan durma başla.</a>
+                        <div class="btns-wrapper justify-start">
+                            <a href="#getstarted">
+                                <a href="#getstarted">
+                        <button class="whyus-btn">Lets go!</button>
+                    </a>
+                            </a>
+                            
+                        </div>
+                        <div class="justify-start">
+                            <div class="trustpilot-widget" data-locale="en-US" data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="63fd1617737b8ea6eafa1506" data-style-height="24px" data-style-width="100%" data-theme="dark" data-style-alignment="center">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="panelPics-div">
+        <div class="fancy-center">
+            <h1 style="text-align: center;" class="cool-title">Wanna take a peek?</h1>
+            <a style="margin-top: 5px; max-width: 100%; margin-bottom: 25px; text-align: center;"
+                class="cool-description">That's going to be your experience while using Pylex!</a>
+            <div class="slideshow-wrapper">
+                <div id="pic1" class="small-pic smallL">
+                    <img class="picpic" src="https://cdn.pylex.me/status.png">
+                </div>
+                <div id="pic2" class="main-pic">
+
+                    <img class="picpic" src="https://cdn.pylex.me/panel.png">
+                </div>
+                <div id="pic3" class="small-pic smallR">
+                    <img class="picpic" src="https://cdn.pylex.me/dash.png">
+                </div>
+            </div>
+            <div class="selector-wrapper">
+                <div id="sel1" class="selector-btn"></div>
+                <div id="sel2" class="selector-btn selectedselector"></div>
+                <div id="sel3" class="selector-btn"></div>
+            </div>
+        </div>
+    </div> -->
+
+    <script type="f687b4012397aced65379752-text/javascript">
+        let pic1 = document.getElementById('pic1');
+        let pic2 = document.getElementById('pic2');
+        let pic3 = document.getElementById('pic3');
+        let sel1 = document.getElementById('sel1');
+        let sel2 = document.getElementById('sel2');
+        let sel3 = document.getElementById('sel3');
+
+        function resetAll() {
+            pic1.style.width = '270px'
+            pic2.style.width = '270px';
+            pic3.style.width = '270px';
+            pic1.style.height = '180px';
+            pic2.style.height = '180px';
+            pic3.style.height = '180px';
+            pic1.style.marginTop = '0';
+            pic2.style.marginTop = '0';
+            pic3.style.marginTop = '0';
+            sel1.style.backgroundColor = 'transparent';
+            sel2.style.backgroundColor = 'transparent';
+            sel3.style.backgroundColor = 'transparent';
+        }
+
+        sel1.onclick = function () {
+            resetAll();
+            pic1.style.width = '540px';
+            pic1.style.height = '360px';
+            sel1.style.backgroundColor = 'white';
+            pic2.style.marginTop = '180px';
+            pic3.style.marginTop = '180px';
+        }
+        sel2.onclick = function () {
+            resetAll();
+            pic2.style.width = '540px';
+            pic2.style.height = '360px';
+            pic1.style.marginTop = '180px';
+            pic3.style.marginTop = '180px';
+            sel2.style.backgroundColor = 'white';
+        }
+        sel3.onclick = function () {
+            resetAll();
+            pic3.style.width = '540px';
+            pic3.style.height = '360px';
+            sel3.style.backgroundColor = 'white';
+            pic1.style.marginTop = '180px';
+            pic2.style.marginTop = '180px';
+        }
+    </script>
+
+    <div class="whyus-div">
+        <div class="fancy-center">
+            <div class="justify-space-between">
+                <div class="left-part">
+                    <h1 class="cool-title">OYUNDA KAZANMAYAMI İHTİYACIN VAR<p class="cool-blue"> HEMEN ŞİMDİ VANADİUMLA!</p>
+                    </h1>
+                    <a style="margin-top: 10px;" class="cool-description">Ah o altına lav koyanlar, Ah Olta spamı yapanlar, bunlar gerçekten çok kanserletici davranışlar değilmi peki onları etrafında hızla dönerek kesmek istemezmiydin. Biliyorum istiyorsun :) </a>
+                    <a href="#getstarted">
+                        <button class="whyus-btn">Ozaman Şimdi Başla!</button>
+                    </a>
+                </div>
+                <div class="wrapper-center">
+                    <img class="example-image" src="https://pngimg.com/d/minecraft_PNG75.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="achievements-div">
+        <div style="padding-top: 25px; padding-bottom: 25px;" class="fancy-center">
+            <div style="margin-top: 50px; margin-bottom: 50px;" class="justify-start">
+                <div style="margin-top: 50px; width: 100%;" class="wrapper-center">
+                    <img class="bigger-example example-image" src="https://png.monster/wp-content/uploads/2022/10/png.monster-37.png">
+                </div>
+                <div class="right-partlol">
+                    <h2 class="rightparttitle">Biz kimmiyiz <p style="font-size: 35px;" class="cool-blue">Gel Gösterelim</p> :))</h2>
+                    <a class="rightpartdescription">Pylex has
+                        managed to achieve
+                        a total ooooffff</a>
+                    <div class="right-stuff">
+                        <div class="right-achievement">
+                            <div class="achievementpos justify-start">
+                                <i class="fa-solid fa-users achievemnt-icn"></i>
+                                <a class="achievement-txt">15,000+ Toplam giriş</a>
+                            </div>
+                        </div>
+                        
+                        <div class="right-achievement">
+                            <div class="achievementpos justify-start">
+                                <i class="fa-solid fa-comments achievemnt-icn"></i>
+                                <a class="achievement-txt">200+ Den Fazla Kullanıcı Yorumları</a>
+                            </div>
+                        </div>
+                        <div class="right-achievement">
+                            <div class="achievementpos justify-start">
+                                <i class="fa-brands fa-discord achievemnt-icn"></i>
+                                <a class="achievement-txt">1k+ Discord Members</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reviews-div">
+        <div class="fancy-center">
+            <h1 style="margin-left: 10px; display: inline-block;" class="cool-title">Gelin Kullananların 
+ Yorumlarına bakalım...
+</h1>
+            <a style="margin-left: 10px; margin-top: 5px;" class="cool-description">Gel Biraz Kullanıcı Yorumları Oku</a>
+            <div class="justify-center">
+                <div class="review-div">
+                    <div class="justify-start testimonial-div">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <a class="testimonial-txt">alın aldırın güzel
+
+</a>
+                    </div>
+                    <div class="testimonial-profile">
+                        <img class="testimonial-pfp" src="https://cdn.discordapp.com/avatars/1113565568646266930/3c1c5f47a113cd9702f32d676a10b1e3.webp?size=80">
+                        <div class="wrapper">
+                            <a class="testimonial-name">Elafy</a>
+                            <a class="testimonial-verified"><i class="fa-solid fa-check"></i> from Discord</a>
+                            <div class="fivestarswrapper">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-div">
+                    <div class="justify-start testimonial-div">
+                        
+
+<i class="fa-solid fa-quote-left"></i>
+                        <a class="testimonial-txt">Factionsda Tam Tamında 4. Tane Zehir kılıcı aldım güzel :d</a>
+                    </div>
+                    <div class="testimonial-profile">
+                        <img class="testimonial-pfp" src="https://cdn.discordapp.com/avatars/1191185426480902234/6e7c700d0c76c239d7e935667051b2fa.webp?size=80">
+                        <div class="wrapper">
+                            <a class="testimonial-name">Emre</a>
+                            <a class="testimonial-verified"><i class="fa-solid fa-check"></i> from Discord</a>
+                            <div class="fivestarswrapper">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-div">
+                    <div class="justify-start testimonial-div">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <a class="testimonial-txt">almayanin kulaklarini isirrim cok iyi
+
+</a>
+                    </div>
+                    <div class="testimonial-profile">
+                        <img class="testimonial-pfp" src="https://cdn.discordapp.com/avatars/310499777253081088/d8e818ee3e241b4878077b9473cb58a3.webp?size=80">
+                        <div class="wrapper">
+                            <a class="testimonial-name">MamedoFF_RR</a>
+                            <a class="testimonial-verified"><i class="fa-solid fa-check"></i> from Discord</a>
+                            <div class="fivestarswrapper">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="f687b4012397aced65379752-text/javascript">
+        const characterLimit = 250;
+        const testimonialElements = document.querySelectorAll('.testimonial-txt');
+        testimonialElements.forEach(element => {
+            let text = element.textContent.trim();
+            if (text.length > characterLimit) {
+                text = text.substring(0, characterLimit);
+                element.textContent = `${text} [...]`;
+            }
+        });
+    </script>
+    
+
+    <script type="f687b4012397aced65379752-text/javascript">
+        let qElements = [];
+        let aElements = [];
+        let answers = [];
+
+        let opened = [0, 0, 0, 0, 0, 0];
+
+        for (let i = 1; i <= 6; i++) {
+            let q = document.getElementById('q' + i);
+            let a = document.getElementById('arrow' + i);
+            let answerz = document.getElementById('answer' + i);
+            qElements.push(q);
+            aElements.push(a);
+            answers.push(answerz);
+
+            q.addEventListener('click', function () {
+                openQuestion(i);
+            });
+        }
+
+        function openQuestion(qNumber) {
+            let index = qNumber - 1;
+            let q = qElements[index];
+            let a = aElements[index];
+            let answersxd = answers[index];
+
+            if (opened[index]) {
+                q.style.paddingBottom = '18px'
+                a.style.transform = 'rotate(90deg)';
+                a.style.marginTop = '-8px';
+                a.style.marginRight = '15px';
+                answersxd.style.position = 'absolute'
+                answersxd.style.opacity = '0%';
+                answersxd.style.marginTop = '0px'
+                answersxd.style.marginBottom = '0px'
+                opened[index] = 0;
+            } else {
+                q.style.height = 'fit-content';
+                q.style.paddingBottom = '5px'
+                a.style.transform = 'rotate(180deg)';
+                a.style.marginTop = '-5px';
+                a.style.marginRight = '20px';
+                answersxd.style.position = 'relative'
+                answersxd.style.opacity = '100%';
+                answersxd.style.marginTop = '5px'
+                answersxd.style.marginBottom = '15px'
+                opened[index] = 1;
+            }
+        }
+    </script>
+
+
+
+    <div id="getstarted" class="premium-div">
+        <div class="fancy-center">
+            <h1 style="margin-left: 10px;" class="cool-title">Satın Almaya Hazırmısın</h1>
+            <a style="margin-top: 5px; margin-left: 10px;" class="cool-description">Hemen başla!</a>
+            <div style="margin-top: 25px;" class="justify-space-evenly">
+                
+                <div id="premiumoffer" class="premium-offer">
+                    <div class="long-line-feature premium"></div>
+                    <!-- <div style="position: relative; height: 160px; width: 100%; " class="wrapper">
+                        <img src="https://cdn.pylex.me/pylexpremiumbanner.png" class="banner-image">
+                    </div> -->
+                    <div id="learnmorejustify" style="transition: .25s;" class="justify-start">
+                        <a id="premiumoffertxt" class="premium-offertxt"><i class="fa-solid fa-crown"></i>VanadiumX Özellikleri</a>
+                        <div class="premium-offers">
+                            <a class="premium-offer-cool"><i class="fa-solid fa-circle-check featureicn"></i>Bansız Oyun Deneyimi</a><a class="premium-offer-cool"><i class="fa-solid fa-circle-check featureicn"></i>+30 Modül</a>
+                            
+                            <a class="premium-offer-cool"><i class="fa-solid fa-chart-simple featureicn"></i>Oyun FPS'ini düşürmeden en iyi performans</a><a class="premium-offer-cool"><i class="fa-solid fa-chart-simple featureicn"></i>Bütün bilgisayarlarda çalışır.</a>
+                            <a class="premium-offer-cool"><i class="fa-solid fa-ticket featureicn"></i>7/24 Yardım, Destek</a>
+                            <a style="margin-left: 10px; font-size: 12px; color: rgba(128, 128, 128, 0.682);" class="premium-offer-cool">( Almak istersen seni aramızda görmekten mutluluk duyarız )</a>
+                        </div>
+                        
+                                <button id="myBtn" class="lesgohover landing-btn button">Satın Al</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="myModal" class="modal" style="display: none;">
+  <div class="modal-content">
+<div style="position: relative; height: 160px; width: 100%; " class="wrapper">
+    <span class="close">×</span>
+    <form id="purchaseForm">
+<button onclick="redirectToShopier('1week')" class="button lesgohover landing-btn">1 Haftalık Üyelik Satın Al</button>
+<button onclick="redirectToShopier('1month')" class="button lesgohover landing-btn">1 Aylık Üyelik Satın Al</button>
+<button onclick="redirectToShopier('unlimited')" class="button lesgohover landing-btn">Sınırsız Üyelik Satın Al</button>
+    </form>
+  </div>
+</div>
+    <div class="footer-div">
+        <div style="height: fit-content;" class="fancy-center">
+            <div class="justify-space-evenly">
+                <div class="options-wrapper">
+                    <a class="pylex-logo-footer">Vanadiumx<p class="smaller-logo">.online</p></a>
+                    <a class="pylex-logo-desc"> 
+   https://discord.gg/TRepms48yb</a>
+                </div>
+                
+                
+                 
+            </div>
+            
+        </div>
+    </div>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="f687b4012397aced65379752-|49" defer=""></script>
+<script>
+// Modalı açıp kapatan JavaScript kodu
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+
+// Butonlar için event listener ekleyelim
+document.querySelectorAll('.landing-btn').forEach(item => {
+    item.addEventListener('click', function() {
+        modal.style.display = "block";
+        // Her buton için farklı URL tanımlayalım
+        var productId = "";
+        if (this.textContent.includes("1 Haftalık")) {
+            productId = "24767332"; // 1 Haftalık Üyelik için örnek Product ID
+        } else if (this.textContent.includes("1 Aylık")) {
+            productId = "24766999"; // 1 Aylık Üyelik için örnek Product ID
+        } else if (this.textContent.includes("Sınırsız")) {
+            productId = "24774454"; // Sınırsız Üyelik için örnek Product ID
+        }
+        // Form submit olduğunda doğru URL'ye yönlendirme yapalım
+        document.getElementById("purchaseForm").onsubmit = function(event) {
+            event.preventDefault();
+            modal.style.display = "none";
+            window.location.href = "https://www.shopier.com/ShowProductNew/products.php?id=" + productId;
+        }
+    })
+});
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</div></body></html>
